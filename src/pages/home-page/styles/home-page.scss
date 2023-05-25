@@ -151,4 +151,45 @@
     color: #FFFFFF;
   }
 
+  @media (max-width: 834px) {
+
+    /* Modyfikacje dla tabletu */
+    .song-preview-card {
+      max-width: 375px;
+      max-height: 812px;
+      padding: 12px;
+      font-size: 16px;
+
+      .song-preview-card__image-container {
+        height: 300px;
+      }
+
+      .song-preview-card__title {
+        font-size: 20px;
+      }
+
+
+    }
+  }
+
+  @media (max-width: 480px) {
+
+    /* Modyfikacje dla telefonu */
+    .song-preview-card {
+      max-width: 280px;
+      max-height: 100%;
+      padding: 8px;
+      font-size: 14px;
+
+      .song-preview-card__image-container {
+        height: 200px;
+      }
+
+      .song-preview-card__title {
+        font-size: 18px;
+      }
+
+    }
+  }
+
 }
