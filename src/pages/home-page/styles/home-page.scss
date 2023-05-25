@@ -3,11 +3,6 @@
 /// 
 /// 
 
-#home-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
 .song-preview-card {
   margin: 30px 16px;
@@ -34,31 +29,13 @@
   }
 
   .song-preview-card__title {
-    width: 43px;
-    height: 29px;
-
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
     font-size: 24px;
-    line-height: 29px;
-  }
-
-  .song-preview-card__artist {
-    width: 92px;
-    height: 25px;
-
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    letter-spacing: -0.01em;
-
+    line-height: 1.4em;
+    font-weight: 700;
   }
 
   .song-preview-card__artist-and-time {
-    margin-top: 11px;
+    margin-top: 10px;
     width: 100%;
     font-weight: 400;
     font-size: 18px;
@@ -75,15 +52,57 @@
     gap: 8px;
   }
 
-  .song-preview-card__time-icon-container {
-    width: 20px;
-    height: 20px;
+  .Vector-591 {
+    position: relative;
+    margin-top: 24px;
+
+    opacity: 0.2;
+    border: 1.5px solid #FFFFFF;
+  }
+
+  .song-preview-card__album-cover-and-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 24px;
   }
 
 
+  .song-preview-card__album-cover-container {
+    position: relative;
 
-  .song-preview-card__time-text {
-    width: 36px;
+    border-radius: 90px;
+    width: 40px;
+    overflow: hidden;
+  }
+
+  .song-preview-card__album-info-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 8px;
+  }
+
+  .song-preview-card__album-info-text {
+    width: 54px;
+    height: 25px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
+  }
+
+  .song-preview-card__album-info-dot-spacer {}
+
+  .song-preview-card__album-info-text-year {
+    width: 42px;
     height: 25px;
 
     font-family: 'Lato';
@@ -93,45 +112,27 @@
     line-height: 140%;
     /* or 25px */
 
-    text-align: right;
     letter-spacing: -0.01em;
 
     color: #FFFFFF;
   }
 
-  .Vector-591 {
-    position: absolute;
-    width: 349px;
-    height: 0px;
-    left: 50px;
-    top: 525px;
+  .song-preview-card__album-info-dot-spacer-second {}
 
-    opacity: 0.2;
-    border: 1.5px solid #FFFFFF;
+  .song-preview-card__album-info-text-time {
+    width: 136px;
+    height: 25px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    /* or 25px */
+
+    letter-spacing: -0.01em;
+
+    color: #FFFFFF;
   }
 
-  .song-preview-card__album-cover-and-info {
-    margin-top: 12px;
-    padding: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .song-preview-card__album-cover-container {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    overflow: hidden;
-
-  }
-
-  .song-preview-card__album-info-container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    gap: 8px;
-  }
 }
