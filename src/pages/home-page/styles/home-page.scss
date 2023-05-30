@@ -22,6 +22,7 @@ body {
   padding: 16px;
   color: white;
 
+
   .song-preview-card__image-container {
     position: relative;
     border-radius: 16px;
@@ -158,45 +159,106 @@ body {
     color: #FFFFFF;
   }
 
-  @media (max-width: 834px) {
-
-    /* Modyfikacje dla tabletu */
-    .song-preview-card {
-      max-width: 375px;
-      max-height: 812px;
-      padding: 12px;
-      font-size: 16px;
-
-      .song-preview-card__image-container {
-        height: 300px;
-      }
-
-      .song-preview-card__title {
-        font-size: 20px;
-      }
 
 
+
+}
+
+@media (max-width: 834px) {
+
+  /* Modyfikacje dla tabletu */
+  .song-preview-card {
+
+
+    .song-preview-card__image-container {}
+
+    .song-preview-card__title {}
+
+    .song-preview-card__album-info-dot-spacer {
+      border: #FFFFFF;
     }
+
+
   }
+}
 
-  @media (max-width: 480px) {
+@media (max-width: 428px) {
 
-    /* Modyfikacje dla telefonu */
-    .song-preview-card {
-      max-width: 280px;
-      max-height: 100%;
-      padding: 8px;
+  /* Modyfikacje dla telefonu */
+  .song-preview-card {
+    margin: 30px 16px;
+    background-color: #9296C4;
+    width: 100%;
+    height: 100%;
+    max-width: 343px;
+    max-height: 537px;
+    border-radius: 24px;
+    padding: 16px;
+    color: white;
+
+
+    .song-preview-card__image-container {
+      position: relative;
+      border-radius: 16px;
+      width: 311px;
+      height: 311px;
+      overflow: hidden;
+    }
+
+    .song-preview-card__album-cover-and-info {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 20px;
+    }
+
+    .song-preview-card__album-info-dot-spacer {
+      border: #FFFFFF;
+    }
+
+    .song-preview-card__album-info-text {
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
       font-size: 14px;
+      line-height: 140%;
 
-      .song-preview-card__image-container {
-        height: 200px;
-      }
 
-      .song-preview-card__title {
-        font-size: 18px;
-      }
+      letter-spacing: -0.01em;
 
+      color: #FFFFFF;
     }
-  }
 
+    .song-preview-card__album-info-text-year {
+
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 25px */
+
+      letter-spacing: -0.01em;
+
+      color: #FFFFFF;
+    }
+
+    .song-preview-card__album-info-text-time {
+
+
+      font-family: 'Lato';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 140%;
+      /* or 25px */
+
+      letter-spacing: -0.00em;
+
+      color: #FFFFFF;
+    }
+
+  }
 }
